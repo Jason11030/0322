@@ -5,11 +5,18 @@ import android.os.Bundle
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    lateinit var  txv:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var txv: TextView = findViewById(R.id.txv)
-        txv.text = "0"
+        txv = findViewById(R.id.txv)
+        txv.setOnClickListener({
+           if (txv.text == "你好嗎？？"){
+               txv.text ="雙刀還是太刀"
+           }else{
+               txv.text="大錘還是大劍"
+           }
+        })
 
     }
 }
