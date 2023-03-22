@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         txv = findViewById(R.id.txv)
         txv.setOnClickListener({
            if (txv.text == "你好嗎？？"){
-               txv.text ="雙刀還是太刀"
+               txv.text ="雙刀還是太刀,太刀最好"
            }else{
                txv.text="大錘還是大劍"
            }
